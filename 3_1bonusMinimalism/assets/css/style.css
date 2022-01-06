@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Monoton&display=swap');
+
+*{
+  border:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+}
+
+a{
+  color:white;
+}
+
+li{
+  list-style-type: none;
+}
+
+body{
+  height:100vh;
+  background-color: black;
+  color:white;
+}
+
+body{
+  height:100vh;
+}
+
+/* 
+Die Höhe des <body> ist 100vh.
+Schriftarten: “Monoton”, “Ubuntu”.
+Die Bilder findest du unter diesen Links:
+Link Bild 1
+Link Bild 2
+Link Bild 3
+Nutze die Farben #070707, #9d9f9f, #f4f7f8 und #AC8059
+Die Social Media Icons kannst du über fontawesome integrieren. 
+font-family: 'Merriweather', serif;
+font-family: 'Monoton', cursive;
+*/
+
+header{
+  background-color: rgb(190, 86, 86);
+  color:white;
+  text-transform: uppercase;
+  border-bottom:3px solid gray;
+}
+header img{
+  height:40px;
+} 
+
+nav{
+  text-align: right;
+}
+
+nav ul li{
+  display:inline;
+  padding-right:2rem;
+}
+
+main>article{
+  background-color: red;
+}
+h1{
+  width:40%;
+  font-size: 4rem;
+}

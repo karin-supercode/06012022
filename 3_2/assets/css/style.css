@@ -1,0 +1,68 @@
+*{
+  border:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Setze left: 50%; top: 50%; transform: translate(-50%, -50%); auf das Modal, 
+um es auf der Seite zu zentrieren.
+Das Hintergrundbild kannst du frei wählen … nutze dafür zB. https://unsplash.com/
+Die rote Farbe ist: #F62B54.
+Benutze em Werte für die width, padding & border-radius des Modals.
+Verwende em Werte für die top und right Werte des Schließen-Buttons. */
+main{
+  background: url(../img/bg.jpg) no-repeat center/cover;
+  height:100vh;
+  position:relative;
+}
+article{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  font-size:2rem;
+  background-color: #f62b54;
+  color:white;
+  width:13em;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+h1{
+  text-decoration: underline;
+  padding-bottom: 0.8em;
+}
+article p{
+  font-size: 1rem;
+}
+
+div{
+  width:1em;
+  height:1em;
+  background-color: #fff;
+  border-radius: 50%;
+  position:absolute;
+  top:10%;
+  right:8%;
+}
+div>div{
+  border-radius: 1em;
+  width:1em;
+  height:0.2em;
+  position:absolute;
+  top:43%;
+  left:0%;
+  background-color: #f62b54;
+  transform: rotate(-45deg);
+}
+div>div:nth-child(2){
+  border-radius: 1em;
+  width:1em;
+  height:0.2em;
+  position:absolute;
+  top:43%;
+  left:0%;
+  background-color: #f62b54; 
+  transform: rotate(45deg);
+}
