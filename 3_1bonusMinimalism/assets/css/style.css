@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* ----------------GENERAL FORMATTING--------------- */
 
 *{
   border:0;
   margin:0;
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
-  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;  text-decoration: none;
 }
 
 a{
@@ -22,46 +23,120 @@ body{
   color:white;
 }
 
-body{
-  height:100vh;
-}
-
-/* 
-Die Höhe des <body> ist 100vh.
-Schriftarten: “Monoton”, “Ubuntu”.
-Die Bilder findest du unter diesen Links:
-Link Bild 1
-Link Bild 2
-Link Bild 3
-Nutze die Farben #070707, #9d9f9f, #f4f7f8 und #AC8059
-Die Social Media Icons kannst du über fontawesome integrieren. 
-font-family: 'Merriweather', serif;
-font-family: 'Monoton', cursive;
-*/
+/* ----------------HEADER--------------- */
 
 header{
-  background-color: rgb(190, 86, 86);
-  color:white;
+  background-color: #AC8059;
+  height:10vh;
   text-transform: uppercase;
-  border-bottom:3px solid gray;
+}
+header section,
+header nav,
+header nav ul li,
+header div,
+header img,
+header a{
+  display:inline-block;
+}
+
+header section{
+  position:relative;
 }
 header img{
-  height:40px;
-} 
-
-nav{
-  text-align: right;
+  width:50px;
+  margin: 1rem 2rem;
 }
 
-nav ul li{
-  display:inline;
-  padding-right:2rem;
+header section div{
+  position:absolute;
+  top:2rem;
+  left:8rem;
 }
 
-main>article{
-  background-color: red;
+header div a{
+  width:300px;
 }
+
+header nav{
+  position:relative;
+  left: 34rem;
+  top: -2rem;
+  font-size:1.3rem;
+}
+
+header nav ul li{
+  padding-right:4rem;
+}
+header nav ul li a:nth-of-type(1){
+  color:black;
+
+}
+
+/* ----------------HEADER NAV--------------- */
+
+
+/* ------------MAIN--------------- */
+main{
+  height:80vh;
+  margin-left:9rem;
+}
+
+main section article{
+  height:80%;
+}
+
 h1{
-  width:40%;
+  width:30%;
   font-size: 4rem;
+  padding-top:15rem;
+}
+
+main section article a{
+  color:#AC8059;
+  line-height:3rem;
+  text-transform: uppercase;
+}
+
+main section{
+  position:relative;
+  height:80vh;
+}
+
+main section img{
+  position: absolute;
+  top:10%;
+  right:0;
+  width:20%;
+  height:80%;
+  padding-left:2em;
+}
+main section img:nth-of-type(2){
+right: 20%;
+}
+main section img:nth-of-type(3){
+right: 40%;
+}
+
+
+/* ------------MAIN--------------- */
+footer{
+  height:10vh;
+  background-color: rgb(179, 67, 67);
+}
+
+footer nav{
+  text-align: left;
+  font-size:1.5rem;
+  padding:1em 0 0 2em;
+}
+footer nav ul li{
+  display:inline-block;
+  padding-right:1em;
+}
+
+footer a{
+  color:white;
+}
+footer a:hover{
+  color:gray;
 }
